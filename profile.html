@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People Profiles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Rubik", sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .jobs-list-container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .jobs-list-container h2 {
+            font-size: 30px;
+            border-left: 4px solid #023047;
+            padding-left: 20px;
+            color: #023047;
+        }
+
+        .jobs-list-container .job-search {
+            width: 100%;
+            padding: 12px 24px;
+            font-size: 18px;
+            box-sizing: border-box;
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .jobs-list-container .jobs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .jobs-list-container .job {
+            box-shadow: 0 4px 24px -8px rgba(2, 48, 71, 0.2);
+            padding: 24px;
+            border-radius: 16px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: all 400ms ease;
+            background-color: #ffffff;
+        }
+
+        .jobs-list-container .job:hover {
+            transform: scale(1.03);
+        }
+
+        .jobs-list-container .job img {
+            width: 80px; /* Set a specific width */
+            height: 80px; /* Set a specific height */
+            border-radius: 50%; /* Keep the circular shape */
+            margin-bottom: 16px;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+        .jobs-list-container .job-title {
+            font-size: 20px;
+            padding: 10px 0;
+            margin: 0;
+            color: #023047;
+        }
+
+        .jobs-list-container .details {
+            margin-top: 6px;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.8;
+            flex: 1;
+        }
+
+        .jobs-list-container .details-btn {
+            text-decoration: none;
+            border: 1px solid #023047;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+            transition: all 400ms ease;
+            background-color: #e63946;
+            color: white;
+        }
+
+        .jobs-list-container .details-btn:hover {
+            background: #023047;
+            color: #fff;
+        }
+
+        @media (max-width: 940px) {
+            .jobs-list-container .jobs {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .jobs-list-container .jobs {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="jobs-list-container">
+        <h2>People Profiles</h2>
+
+        <input class="job-search" type="text" placeholder="Search profiles..." />
+
+        <div class="jobs">
+            <div class="job">
+                <img src="profile1.png" alt="Profile 1" />
+                <h3 class="job-title">John Doe</h3>
+                <p class="details">Web Developer with 5 years of experience in building responsive websites.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile2.png" alt="Profile 2" />
+                <h3 class="job-title">Jane Smith</h3>
+                <p class="details">Graphic Designer specializing in branding and visual identity.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile3.png" alt="Profile 3" />
+                <h3 class="job-title">Alice Johnson</h3>
+                <p class="details">Data Scientist with expertise in machine learning and data analysis.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile4.png" alt="Profile 4" />
+                <h3 class="job-title">Bob Brown</h3>
+                <p class="details">Project Manager with a track record of successful project delivery.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile5.png" alt="Profile 5" />
+                <h3 class="job-title">Charlie Davis</h3>
+                <p class="details">UX/UI Designer focused on creating user-friendly interfaces.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile6.png" alt="Profile 6" />
+                <h3 class="job-title">Emily Clark</h3>
+                <p class="details">Software Engineer with a passion for developing innovative solutions.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile7.png" alt="Profile 7" />
+                <h3 class="job-title">David Wilson</h3>
+                <p class="details">Marketing Specialist with a focus on digital strategies and brand growth.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile8.png" alt="Profile 8" />
+                <h3 class="job-title">Sophia Turner</h3>
+                <p class="details">Content Writer with a knack for creating engaging and informative articles.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile9.png" alt="Profile 9" />
+                <h3 class="job-title">Michael Lee</h3>
+                <p class="details">Cybersecurity Analyst dedicated to protecting systems and networks.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+            <div class="job">
+                <img src="profile10.png" alt="Profile 10" />
+                <h3 class="job-title">Olivia Martinez</h3>
+                <p class="details">Product Manager with experience in agile methodologies and team leadership.</p>
+                <a href="#" class="details-btn">View Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
